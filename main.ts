@@ -10,7 +10,7 @@ if (isNaN(port)) {
   Deno.exit(1);
 }
 
-console.log("http://localhost:" + port + "/");
+console.log("http://localhost:" + port);
 
 listenAndServe({ port: port }, async (req) => {
   if (req.method === "GET" && req.url === "/") {
